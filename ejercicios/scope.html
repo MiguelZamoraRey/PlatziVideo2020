@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Scope</title>
+    </head>
+    <body>
+        <a href="/ejercicios">Go Back</a>
+        <p><em>Abre la COnsola</em></p>
+    </body>
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script>
+        //global
+        //var message = 'hello Platzi';
+        //var $ = function(message){
+        //    console.log(message)
+        //}
+        //function
+        /*function printNumbers(){
+            var i;
+            for(i = 0; i<10;i++){
+                function eventuallyPrintNumber(n) {
+                    setTimeout(function(){
+                    console.log(n)
+                    },100);
+                }
+                eventuallyPrintNumber(i);
+            }
+        }*/
+        //block
+        function printNumbers(){
+            for(let i = 0; i<10;i++){
+                setTimeout(function(){
+                console.log(i)
+                },100);
+            }
+        }
+        //module
+        //solo se recuerdan las variables del archivo, como ejemplo se puede ver desde el index principal
+    </script>
+</html>
